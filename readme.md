@@ -25,7 +25,7 @@ npm i ui-progress-circle
 ```
 
 ```ts
-import `ui-progress-circle`;
+import 'ui-progress-circle';
 ```
 
 or CDN:
@@ -52,7 +52,7 @@ Some examples:
 <ui-progress-circle value="67"></ui-progress-circle>
 <ui-progress-circle value="100" color="success"></ui-progress-circle>
 <ui-progress-circle value="33" stroke="100"></ui-progress-circle>
-<ui-progress-circle shape="round" color="info" radius="90"></ui-progress-circle>
+<ui-progress-circle shape="round" color="#2266DD" radius="90"></ui-progress-circle>
 ```
 
 See [demos][demos] page for style ideas.
@@ -72,10 +72,6 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 })
 ```
 
-### Other
-
-Search the web for "how to use web components in your framework".
-
 **main.ts**
 
 ```ts
@@ -84,9 +80,13 @@ import { defineCustomElements } from 'ui-progress-circle/loader';
 defineCustomElements();
 ```
 
+### Other
+
+Search the web for "how to use web components in your framework".
+
 ## License
 
-(C) Copyright 2020 Domink Geng [MIT][license]
+(C) Copyright 2020 Domink Geng [MIT](LICENSE)
 
 <!-- Links -->
 
