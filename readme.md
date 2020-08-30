@@ -5,6 +5,8 @@
 A simple lightweight circle progress web component with zero dependencies.
 It's easy to use anywhere you want. For example in Angular, React, Vue, Ionic or vanilla HTML/JS etc.
 
+![](img/demo.gif)
+
 ## Features
 
 - Indeterminate progress state. Shown as loading circle.
@@ -90,4 +92,4 @@ defineCustomElements();
 [license]: https://opensource.org/licenses/MIT
 [version]: https://img.shields.io/npm/v/ui-progress-circle.svg?style=flat-square
 [package]: https://www.npmjs.com/package/ui-progress-circle
-[demos]: https://domske.github.io/ui-progress-circle/
+[demos]: https://domske.github.io/ui-progress-circle-demo/
