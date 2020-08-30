@@ -1,0 +1,49 @@
+{
+  "name": "ui-progress-circle",
+  "version": "1.0.0",
+  "description": "Circle Progress Web Component",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "types": "dist/types/components.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/ui-progress-circle/ui-progress-circle.js",
+  "author": {
+    "name": "Dominik Geng",
+    "url": "https://github.com/domske"
+  },
+  "files": [
+    "dist/",
+    "loader/"
+  ],
+  "keywords": [
+    "circle progress",
+    "progress circle",
+    "ring progress",
+    "progress ring",
+    "circle",
+    "ring",
+    "progress",
+    "web component",
+    "component"
+  ],
+  "scripts": {
+    "build": "stencil build --docs",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "generate": "stencil generate"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@stencil/core": "^1.17.3",
+    "@stencil/sass": "^1.3.2",
+    "@types/jest": "25.2.3",
+    "@types/puppeteer": "2.0.1",
+    "jest": "26.0.1",
+    "jest-cli": "26.0.1",
+    "puppeteer": "2.1.1"
+  }
+}
