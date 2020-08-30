@@ -7,6 +7,8 @@ It's easy to use anywhere you want. For example in Angular, React, Vue, Ionic or
 
 ![](img/demo.gif)
 
+[GitHub][github]
+
 ## Features
 
 - Indeterminate progress state. Shown as loading circle.
@@ -41,7 +43,7 @@ or CDN:
 
 ## Usage
 
-[See docs](./src/components/progress-circle/readme.md)
+[See docs][github-docs]
 
 Some examples:
 
@@ -93,3 +95,5 @@ defineCustomElements();
 [version]: https://img.shields.io/npm/v/ui-progress-circle.svg?style=flat-square
 [package]: https://www.npmjs.com/package/ui-progress-circle
 [demos]: https://domske.github.io/ui-progress-circle-demo/
+[github]: https://github.com/domske/ui-progress-circle
+[github-docs]: https://github.com/domske/ui-progress-circle/tree/master/src/components/progress-circle
