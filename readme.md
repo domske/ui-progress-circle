@@ -1,6 +1,6 @@
 # Progress Circle
 
-[![Version][version]][package] [![MIT License][license-badge]][license]
+[![Version][version]][package]
 
 A simple lightweight circle progress web component with zero dependencies.
 It's easy to use anywhere you want. For example in Angular, React, Vue, Ionic or vanilla HTML/JS etc.
@@ -21,7 +21,7 @@ It's easy to use anywhere you want. For example in Angular, React, Vue, Ionic or
 Either via [NPM][package]:
 
 ```bash
-npm i state-stepper
+npm i ui-progress-circle
 ```
 
 ```ts
@@ -90,8 +90,6 @@ defineCustomElements();
 
 <!-- Links -->
 
-[license-badge]: https://img.shields.io/npm/l/ui-progress-circle.svg?style=flat-square
-[license]: https://opensource.org/licenses/MIT
 [version]: https://img.shields.io/npm/v/ui-progress-circle.svg?style=flat-square
 [package]: https://www.npmjs.com/package/ui-progress-circle
 [demos]: https://domske.github.io/ui-progress-circle-demo/
