@@ -7,7 +7,7 @@ It's easy to use anywhere you want. For example in Angular, React, Vue, Ionic or
 
 ![](img/demo.gif)
 
-[GitHub][github]
+### [Demo][demos]
 
 ## Features
 
@@ -56,7 +56,7 @@ Some examples:
 <ui-progress-circle value="42" class="no-animation"></ui-progress-circle>
 ```
 
-See [demos][demos] page for style ideas.
+See [demo][demos] page for style ideas.
 
 ### Angular
 
@@ -87,7 +87,7 @@ Search the web for "how to use web components in your framework".
 
 ## License
 
-(C) Copyright 2020 Domink Geng [MIT](LICENSE)
+(C) Copyright 2020 Domink Geng - [MIT](LICENSE) [GitHub][github]
 
 <!-- Links -->
 
