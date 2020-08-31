@@ -1,6 +1,6 @@
 {
   "name": "ui-progress-circle",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Circle Progress Web Component",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -13,6 +13,10 @@
   "author": {
     "name": "Dominik Geng",
     "url": "https://github.com/domske"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/domske/ui-progress-circle"
   },
   "files": [
     "dist/",
