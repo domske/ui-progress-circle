@@ -53,6 +53,7 @@ Some examples:
 <ui-progress-circle value="100" color="success"></ui-progress-circle>
 <ui-progress-circle value="33" stroke="100"></ui-progress-circle>
 <ui-progress-circle shape="round" color="#2266DD" radius="90"></ui-progress-circle>
+<ui-progress-circle value="42" class="no-animation"></ui-progress-circle>
 ```
 
 See [demos][demos] page for style ideas.

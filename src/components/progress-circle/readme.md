@@ -1,5 +1,7 @@
 # ui-progress-circle
 
+Note: You can turn off animation (transition) by adding the class name "no animation" to the element.
+
 <!-- Auto Generated Below -->
 
 

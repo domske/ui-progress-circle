@@ -10,7 +10,7 @@
   }
 
   circle {
-    transition: stroke-dashoffset 300ms, stroke 300ms;
+    transition: stroke-dashoffset 300ms;
     transform: rotate(-90deg);
     transform-origin: 50% 50%;
     stroke-dasharray: var(--circle-dash);
@@ -25,6 +25,12 @@
       stroke-dashoffset: 0;
       animation: dash 1.8s ease-in-out infinite;
     }
+  }
+}
+
+:host(.no-animation) {
+  circle {
+    transition: none !important;
   }
 }
 
