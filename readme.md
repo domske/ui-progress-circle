@@ -5,7 +5,7 @@
 A simple lightweight circle progress web component with zero dependencies.
 It's easy to use anywhere you want. For example in Angular, React, Vue, Ionic or vanilla HTML/JS etc.
 
-![](img/demo.gif)
+![](img/demo-1.gif)
 
 ### [Demo][demos]
 
@@ -84,6 +84,10 @@ defineCustomElements();
 ### Other
 
 Search the web for "how to use web components in your framework".
+
+![](img/demo-2.gif)
+![](img/demo-3.png)
+![](img/demo-4.gif)
 
 ## License
 
