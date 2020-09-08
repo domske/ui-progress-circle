@@ -5,6 +5,7 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { SvgLineCap } from "./components/progress-circle/progress-circle";
 export namespace Components {
     interface UiProgressCircle {
         /**
@@ -18,7 +19,7 @@ export namespace Components {
         /**
           * The line cap shape. For example: `round`.
          */
-        "shape": CanvasLineCap;
+        "shape": SvgLineCap;
         /**
           * The line width in percent. If stroke >= radius then circle is filled (pie).
          */
@@ -53,7 +54,7 @@ declare namespace LocalJSX {
         /**
           * The line cap shape. For example: `round`.
          */
-        "shape"?: CanvasLineCap;
+        "shape"?: SvgLineCap;
         /**
           * The line width in percent. If stroke >= radius then circle is filled (pie).
          */

@@ -1,6 +1,8 @@
 import { Component, Prop, h, ComponentInterface, Host, Element } from '@stencil/core';
 import { createColorStyles } from '../../utils/color';
 
+export type SvgLineCap = 'butt' | 'round' | 'square' | 'inherit';
+
 @Component({
   tag: 'ui-progress-circle',
   styleUrl: 'progress-circle.scss',
@@ -20,7 +22,7 @@ export class ProgressCircleComponent implements ComponentInterface {
   @Prop() stroke = 10;
 
   /** The line cap shape. For example: `round`. */
-  @Prop() shape: CanvasLineCap = 'butt';
+  @Prop() shape: SvgLineCap = 'butt';
 
   @Element() el!: HTMLElement;
 
