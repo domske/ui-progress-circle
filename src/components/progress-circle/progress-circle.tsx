@@ -1,7 +1,24 @@
-import { Component, Prop, h, ComponentInterface, Host, Element } from '@stencil/core';
+import { Component, ComponentInterface, Element, h, Host, Prop } from '@stencil/core';
 import { createColorStyles } from '../../utils/color';
+import { isSafeNumber, isString } from '../../utils/type-guards';
 
 export type SvgLineCap = 'butt' | 'round' | 'square' | 'inherit';
+
+interface Properties {
+  value: number;
+  radius: number;
+  color: string;
+  stroke: number;
+  shape: SvgLineCap;
+}
+
+const defaultValues: Properties = {
+  value: -1,
+  radius: 100,
+  color: '',
+  stroke: 10,
+  shape: 'butt',
+};
 
 @Component({
   tag: 'ui-progress-circle',
@@ -10,19 +27,19 @@ export type SvgLineCap = 'butt' | 'round' | 'square' | 'inherit';
 })
 export class ProgressCircleComponent implements ComponentInterface {
   /** The progress value in percent. Use -1 or undefined for indeterminate loading animation. */
-  @Prop() value = -1;
+  @Prop() value = defaultValues.value;
 
   /** The circle radius in percent. The default size is 200px (radius 100px) but scaled to 100% of parent. */
-  @Prop() radius = 100;
+  @Prop() radius = defaultValues.radius;
 
   /** The circle color. Use predefined colors like `info`, `success`, `warning` or `danger` or a custom color like `#123456` or `yellow`. */
-  @Prop() color: string;
+  @Prop() color = defaultValues.color;
 
   /** The line width in percent. If stroke >= radius then circle is filled (pie). */
-  @Prop() stroke = 10;
+  @Prop() stroke = defaultValues.stroke;
 
   /** The line cap shape. For example: `round`. */
-  @Prop() shape: SvgLineCap = 'butt';
+  @Prop() shape: SvgLineCap = defaultValues.shape;
 
   @Element() el!: HTMLElement;
 
@@ -30,12 +47,23 @@ export class ProgressCircleComponent implements ComponentInterface {
     return this.value < 0;
   }
 
+  private getValidValues(): Properties {
+    return {
+      value: isSafeNumber(this.value) ? this.value : defaultValues.value,
+      radius: isSafeNumber(this.radius) ? this.radius : defaultValues.radius,
+      stroke: isSafeNumber(this.stroke) ? this.stroke : defaultValues.stroke,
+      color: isString(this.color) ? this.color : defaultValues.color,
+      shape: isString(this.shape) ? this.shape : defaultValues.shape,
+    };
+  }
+
   render() {
-    const radius = this.radius > 100 ? 100 : this.radius;
-    const stroke = this.stroke > radius ? radius : this.stroke;
+    const props = this.getValidValues();
+    const radius = props.radius > 100 ? 100 : props.radius;
+    const stroke = props.stroke > radius ? radius : props.stroke;
     const normalizedRadius = radius - stroke / 2;
     const circumference = normalizedRadius * 2 * Math.PI;
-    const offset = circumference - (this.value / 100) * circumference;
+    const offset = circumference - (props.value / 100) * circumference;
 
     return (
       <Host
@@ -50,13 +78,13 @@ export class ProgressCircleComponent implements ComponentInterface {
           style={{
             '--circle-dash': `${circumference}`,
             '--circle-dash-inv': `${-circumference + 1}`,
-            ...createColorStyles(this.color, true),
+            ...createColorStyles(props.color, true),
           }}
         >
           <circle
             stroke-dashoffset={offset}
             stroke-width={stroke}
-            stroke-linecap={this.shape}
+            stroke-linecap={props.shape}
             fill="transparent"
             r={normalizedRadius}
             cx="100"

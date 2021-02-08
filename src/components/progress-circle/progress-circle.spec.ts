@@ -8,7 +8,7 @@ describe('ui-progress-circle', () => {
       html: '<ui-progress-circle></ui-progress-circle>',
     });
     expect(root).toEqualLightHtml(`
-      <ui-progress-circle class="indeterminate responsive"></ui-progress-circle>
+      <ui-progress-circle class="indeterminate"></ui-progress-circle>
     `);
   });
 

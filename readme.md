@@ -91,7 +91,7 @@ Search the web for "how to use web components in your framework".
 
 ## License
 
-(C) Copyright 2020 Domink Geng - [MIT](LICENSE) [GitHub][github]
+(C) Copyright 2020 - 2021 Domink Geng - [MIT](LICENSE) [GitHub][github]
 
 <!-- Links -->
 

@@ -1,6 +1,6 @@
 {
   "name": "ui-progress-circle",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Circle Progress Web Component",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
