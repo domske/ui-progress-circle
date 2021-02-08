@@ -1,6 +1,6 @@
 {
   "name": "ui-progress-circle",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "Circle Progress Web Component",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -40,8 +40,9 @@
     "typescript"
   ],
   "scripts": {
-    "build": "stencil build --docs",
-    "start": "stencil build --dev --watch --serve",
+    "build": "stencil build --docs --prod",
+    "start": "stencil build --dev --watch --serve --no-open",
+    "start-open": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate"
